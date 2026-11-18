@@ -1,4 +1,10 @@
-package PACKAGE_NAME;
+public String displayString(String str, int n) {
+    if (n <= 0) {
+        return "";
+    }
 
-public class displayString {
+    return str + displayString(str, n - 1);
+}
+
+void main() {
 }
